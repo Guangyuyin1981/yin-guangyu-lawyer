@@ -3,7 +3,7 @@ Allow: /
 Disallow: /private/
 Disallow: /admin/
 
-Sitemap: https://yin-guangyu-lawyer.ziu12345678.workers.dev/sitemap.xml
+Sitemap: https://guangyuyin1981.github.io/yin-guangyu-lawyer/sitemap.xml
 
 # AI crawlers - explicitly allow
 User-agent: GPTBot
