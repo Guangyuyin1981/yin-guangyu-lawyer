@@ -28,8 +28,10 @@
   "url": "https://guangyuyin1981.github.io/yin-guangyu-lawyer/",
   "image": "https://guangyuyin1981.github.io/yin-guangyu-lawyer/images/yin-guangyu.jpg",
   "telephone": "18653389596",
-  "areaServed": [{"@type": "City", "name": "淄博"},{"@type": "AdministrativeArea", "name": "山东省"}],
+  "areaServed": [{"@type": "City", "name": "淄博"},{"@type": "AdministrativeArea", "name": "山东省"},{"@type": "GeoCircle", "geoMidpoint": {"@type": "GeoCoordinates","latitude": 36.820,"longitude": 117.990}, "geoRadius": "50000"}],
   "address": {"@type": "PostalAddress","streetAddress": "人民西路228号金融大厦","addressLocality": "淄博市","addressRegion": "山东省","addressCountry": "CN","geo": {"@type": "GeoCoordinates","latitude": 36.820,"longitude": 117.990}},
+  "geo": {"@type": "GeoCoordinates","latitude": 36.820,"longitude": 117.990},
+  "hasMap": "https://www.openstreetmap.org/?mlat=36.820&mlon=117.990#map=16/36.820/117.990",
   "employee": {
     "@type": "Person","@id": "https://guangyuyin1981.github.io/yin-guangyu-lawyer/#person",
     "name": "尹光玉","familyName": "尹","givenName": "光玉","jobTitle": "合伙人律师",
@@ -45,7 +47,7 @@
     "worksFor": {
       "@type": "Organization","name": "山东大地人律师事务所",
       "description": "山东大地人律师事务所成立于1993年，淄博首批合伙制律所，全国优秀律师事务所。",
-      "address": {"@type": "PostalAddress","streetAddress": "人民西路228号金融大厦","addressLocality": "淄博市","addressRegion": "山东省"}
+      "address": {"@type": "PostalAddress","streetAddress": "人民西路228号金融大厦","addressLocality": "淄博市","addressRegion": "山东省","addressCountry": "CN","geo": {"@type": "GeoCoordinates","latitude": 36.820,"longitude": 117.990}}
     }
   }
 }
@@ -527,6 +529,42 @@
     letter-spacing: .05em;
   }
 
+  /* ====== 位置地图 ====== */
+  .map-frame {
+    width: 100%;
+    height: 360px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: block;
+  }
+  .map-nav {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  .map-nav-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .04em;
+    color: #fff;
+    background: var(--orange);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: opacity .2s;
+  }
+  .map-nav-btn:hover { opacity: .85; }
+  .map-addr {
+    text-align: center;
+    font-size: 14px;
+    color: var(--fg-muted);
+    margin-top: 12px;
+    letter-spacing: .04em;
+  }
+
   /* ====== 响应式 ====== */
   /* 平板 / 小屏笔记本 */
   @media (max-width: 860px) {
@@ -943,6 +981,25 @@
       <p class="cc-value">18653389596</p>
     </div>
   </div>
+</section>
+
+<!-- ====== 位置地图 ====== -->
+<section>
+  <div class="section-head">
+    <span class="sec-label-cn">律所位置</span>
+    <span class="sec-label-en">LOCATION</span>
+  </div>
+  <iframe
+    class="map-frame"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=117.960%2C36.800%2C118.020%2C36.840&layer=mapnik&marker=36.820%2C117.990"
+    loading="lazy"
+    title="山东大地人律师事务所位置地图"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="map-nav">
+    <a class="map-nav-btn" href="https://uri.amap.com/marker?position=117.990,36.820&name=山东大地人律师事务所&coordinate=gaode&callnative=1" target="_blank" rel="noopener">高德地图导航</a>
+    <a class="map-nav-btn" href="https://api.map.baidu.com/marker?location=36.820,117.990&title=山东大地人律师事务所&content=淄博市张店区人民西路228号金融大厦&output=html&coord_type=gcj02" target="_blank" rel="noopener">百度地图导航</a>
+  </div>
+  <p class="map-addr">淄博市张店区人民西路228号金融大厦</p>
 </section>
 
 <!-- ====== Footer ====== -->
