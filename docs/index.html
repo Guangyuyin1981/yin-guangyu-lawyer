@@ -7,6 +7,10 @@
 <meta name="description" content="尹光玉，山东大地人律师事务所合伙人，执业证号13703200810672728。淄博建设工程律师、公司律师，10年+执业经验。">
 <meta name="keywords" content="淄博律师,淄博建设工程律师,淄博建工律师,淄博建筑律师,淄博公司律师,尹光玉,山东大地人律师事务所">
 <meta name="robots" content="index, follow">
+<meta name="geo.region" content="CN-SD">
+<meta name="geo.placename" content="淄博市">
+<meta name="geo.position" content="36.820;117.990">
+<meta name="ICBM" content="36.820, 117.990">
 <meta property="og:title" content="尹光玉 — 山东大地人律师事务所 · 合伙人">
 <meta property="og:description" content="淄博建设工程律师、公司律师，执业18年。">
 <meta property="og:type" content="profile">
@@ -25,7 +29,7 @@
   "image": "https://guangyuyin1981.github.io/yin-guangyu-lawyer/images/yin-guangyu.jpg",
   "telephone": "18653389596",
   "areaServed": [{"@type": "City", "name": "淄博"},{"@type": "AdministrativeArea", "name": "山东省"}],
-  "address": {"@type": "PostalAddress","streetAddress": "人民西路228号金融大厦","addressLocality": "淄博市","addressRegion": "山东省","addressCountry": "CN"},
+  "address": {"@type": "PostalAddress","streetAddress": "人民西路228号金融大厦","addressLocality": "淄博市","addressRegion": "山东省","addressCountry": "CN","geo": {"@type": "GeoCoordinates","latitude": 36.820,"longitude": 117.990}},
   "employee": {
     "@type": "Person","@id": "https://guangyuyin1981.github.io/yin-guangyu-lawyer/#person",
     "name": "尹光玉","familyName": "尹","givenName": "光玉","jobTitle": "合伙人律师",
@@ -33,6 +37,11 @@
     "url": "https://guangyuyin1981.github.io/yin-guangyu-lawyer/","image": "https://guangyuyin1981.github.io/yin-guangyu-lawyer/images/yin-guangyu.jpg",
     "telephone": "18653389596",
     "knowsAbout": ["建设工程法律","建设工程合同纠纷","工程款追索","实际施工人","工程造价鉴定","EPC合同","公司法","股权转让","出资责任","特许经营合同","买卖合同纠纷","企业合规","民商事诉讼","商事仲裁"],
+    "memberOf": [
+      {"@type": "Organization","name": "淄博市律协公司法律专业委员会","role": "主任"},
+      {"@type": "Organization","name": "淄博市律协房地产与建设工程专业委员会","role": "委员"},
+      {"@type": "Organization","name": "淄博市律协律师行业高质量发展与规划委员会","role": "委员"}
+    ],
     "worksFor": {
       "@type": "Organization","name": "山东大地人律师事务所",
       "description": "山东大地人律师事务所成立于1993年，淄博首批合伙制律所，全国优秀律师事务所。",
@@ -324,6 +333,31 @@
     line-height: 1.75;
   }
   .p-card.featured { border-left: 3px solid var(--orange); }
+
+  /* ====== 社会职务 ====== */
+  .duty-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .duty-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .duty-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--orange);
+    margin-top: 8px;
+    flex-shrink: 0;
+  }
+  .duty-text {
+    font-size: 15px;
+    color: var(--fg-secondary);
+    line-height: 1.75;
+  }
 
   /* ====== 代表业绩 ====== */
   .case-grid {
@@ -731,6 +765,30 @@
       <div class="p-num">04</div>
       <h3>商事争议解决</h3>
       <p>买卖合同纠纷、特许经营合同纠纷、产品质量争议、商事仲裁代理。多路径策略推演，设计最优争议解决方案。</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr></div>
+
+<!-- ====== 社会职务 ====== -->
+<section>
+  <div class="section-head">
+    <span class="sec-label-cn">社会职务</span>
+    <span class="sec-label-en">PROFESSIONAL AFFILIATIONS</span>
+  </div>
+  <div class="duty-list">
+    <div class="duty-item">
+      <span class="duty-dot"></span>
+      <span class="duty-text">淄博市律协公司法律专业委员会主任</span>
+    </div>
+    <div class="duty-item">
+      <span class="duty-dot"></span>
+      <span class="duty-text">淄博市律协房地产与建设工程专业委员会委员</span>
+    </div>
+    <div class="duty-item">
+      <span class="duty-dot"></span>
+      <span class="duty-text">淄博市律协律师行业高质量发展与规划委员会委员</span>
     </div>
   </div>
 </section>
